@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>cool beatbox soundboard</title>
+  <link rel="stylesheet" href="style.css">
+  
+  <style>
+    .btn-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .btn-container>div {
+      display: flex;
+      width: 100%;
+      justify-content: none;
+    }
+
+    .btn-container>div>button {
+      margin: 35px;
+    }
+
+    button:active {
+      background-color: rgb(200, 200, 200);
+      transform: translateY(4px);
+    }
+
+    .btn {
+      width: 150px;
+      height: 100px;
+      border-radius: 50%;
+      border-color: black;
+      box-shadow: 1px 5px 1px black;
+      background-color: white;
+    }
+
+    .secret {
+      width: 20px;
+      height: 20px;
+      background-color: white;
+      justify-content: none;
+    }
+    
+    h2 {
+      padding: 85px 0px;
+      opacity: 1;
+      text-align: center;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 0.5
+    }       
+    
+    h1 {
+      text-align: center;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 0.5;
+    }
+  .center{
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    width: 35%;
+    height: 35%;
+  }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <img src="Cool.png" class="center" alt="cool beatbox soundboard">
+    <marquee behavior=scroll direction="left" scrollamount="20"><h1>Scroll down to check out more sounds!</h1></marquee>
+  </div>
+
+  <div class="btn-container">
+    <div>
+      <button onmousedown="sound1.play()" class="btn"><h2>p</h2></button>
+      <button onmousedown="sound2.play()" class="btn"><h2>bass</h2></button>
+      <button onmousedown="sound3.play()" class="btn"><h2>liproll 1</h2></button>
+      <button onmousedown="sound4.play()" class="btn"><h2>tongueroll 1</h2></button>
+      <button onmousedown="sound5.play()" class="btn"><h2>zipper</h2></button>
+      <button onmousedown="sound6.play()" class="btn"><h2>beat 1</h2></button>
+    </div>
+
+    <div>
+      <button onmousedown="sound7.play()" class="btn"><h2>t</h2></button>
+      <button onmousedown="sound8.play()" class="btn"><h2>inward bass</h2></button>
+      <button onmousedown="sound9.play()" class="btn"><h2>liproll 2</h2></button>
+      <button onmousedown="sound10.play()" class="btn"><h2>tongueroll 2</h2></button>
+      <button onmousedown="sound11.play()" class="btn"><h2>cat</h2></button>
+      <button onmousedown="sound12.play()" class="btn"><h2>beat 2</h2></button>
+    </div>
+
+    <div>
+      <button onmousedown="sound13.play()" class="btn"><h2>k</h2></button>
+      <button onmousedown="sound14.play()" class="btn"><h2>quick inhale</h2></button>
+      <button onmousedown="sound15.play()" class="btn"><h2>liproll 3</h2></button>
+      <button onmousedown="sound16.play()" class="btn"><h2>tongueroll 3</h2></button>
+      <button onmousedown="sound17.play()" class="btn"><h2>kazoo</h2></button>
+      <button onmousedown="sound18.play()" class="btn"><h2>beat 3</h2></button>
+    </div>
+
+    <div>
+      <button onmousedown="secret.play()" class="secret">?</button>
+    </div>
+
+
+    <script>
+      var sound1 = new Audio();
+      sound1.src = "p.mp3";
+      var sound2 = new Audio();
+      sound2.src = "bass.mp3";
+      var sound3 = new Audio();
+      sound3.src = "lip1.mp3";
+      var sound4 = new Audio();
+      sound4.src = "tog1.mp3";
+      var sound5 = new Audio();
+      sound5.src = "zipper.mp3";
+      var sound6 = new Audio();
+      sound6.src = "beat1.mp3";
+      var sound7 = new Audio();
+      sound7.src = "t.mp3";
+      var sound8 = new Audio();
+      sound8.src = "inbase.mp3";
+      var sound9 = new Audio();
+      sound9.src = "lip2.mp3";
+      var sound10 = new Audio();
+      sound10.src = "tog2.mp3";
+      var sound11 = new Audio();
+      sound11.src = "cat.mp3";
+      var sound12 = new Audio();
+      sound12.src = "beat2.mp3";
+      var sound13 = new Audio();
+      sound13.src = "k.mp3";
+      var sound14 = new Audio();
+      sound14.src = "inhale.mp3";
+      var sound15 = new Audio();
+      sound15.src = "lip3.mp3";
+      var sound16 = new Audio();
+      sound16.src = "tog3.mp3";
+      var sound17 = new Audio();
+      sound17.src = "kazoo.mp3";
+      var sound18 = new Audio();
+      sound18.src = "beat3.mp3";
+      var secret = new Audio();
+      secret.src = "rickroll.mp3";
+    </script>
+</body>
+
+</html>
